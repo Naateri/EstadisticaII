@@ -38,7 +38,7 @@ def estadistico_chi(tab_contingencia):
 			
 			result += (pow(o - expected, 2) / expected)
 			
-	#print ("e11: ", (sum_filas[0] * sum_columnas[0])/total)
+	print ("e11: ", (sum_filas[0] * sum_columnas[0])/total)
 	#print(E)
 	
 	return result
@@ -66,9 +66,12 @@ tab = [ [12, 14, 30], [18, 16, 24], [12, 8, 4]]
 
 # Resultado = 10.35
 
-print(estadistico_chi(tab))
+#print(estadistico_chi(tab))
 
 tab = [ [10, 13, 29], [19, 80, 19], [81, 57, 22]]
-print(estadistico_chi(tab))
+#print(estadistico_chi(tab))
 
-interpretar_prueba(tab, 0.01)
+#interpretar_prueba(tab, 0.01)
+
+tab = [ [70, 64, 66], [63, 68, 69] ]
+print(estadistico_chi(tab))
